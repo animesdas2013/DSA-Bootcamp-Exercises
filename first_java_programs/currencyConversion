@@ -1,0 +1,18 @@
+//Input currency in rupees and output in USD
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+class GFG {
+    
+    static void currencyConversion(double INR){
+        final double usd = 72.00;
+        System.out.println(INR/usd);
+}
+	public static void main (String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    double a = sc.nextDouble();
+	    currencyConversion(a);
+	}
+}
