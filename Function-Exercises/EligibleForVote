@@ -1,0 +1,28 @@
+// Eligibility criteria for a person to give vote
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+class GFG {
+    public static boolean eligible_For_vote(int age)
+    {
+        if(age<18){
+            return false;
+        }
+        return true;
+    }
+    
+    
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    if(eligible_For_vote(a)){
+	        System.out.println("Eligible to give vote");    
+	    }
+	    else{
+	        System.out.println("not eligible to give vote");
+	    }
+	    
+	}
+}
