@@ -3,7 +3,7 @@ import java.lang.*;
 import java.util.*;
 
 class GFG {
-    public static int min(int a,int b, int c)
+    public static int max(int a,int b, int c)
     {
         int max = 0;
         if(a==b && b==c){
@@ -12,7 +12,7 @@ class GFG {
         else if(a>b && a>c){
             max = a;
         }
-        else if(b>a && b>c){
+        else if(b>c){
             max = b;
         }
         else{
@@ -21,7 +21,7 @@ class GFG {
         return max;
     }
     
-    public static int max(int a,int b, int c)
+    public static int min(int a,int b, int c)
     {
         int min = 0;
             if(a==b && b==c){
@@ -30,7 +30,7 @@ class GFG {
             else if(a<b && a<c){
                 min = a;
             }
-            else if(b<a && b<c){
+            else if(b<c){
                 min = b;
             }
             else{
